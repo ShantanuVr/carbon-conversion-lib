@@ -1,6 +1,15 @@
 # Carbon Conversion Library
 
+[![npm version](https://badge.fury.io/js/carbon-conversion-lib.svg)](https://badge.fury.io/js/carbon-conversion-lib)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-%230074c1.svg)](http://www.typescriptlang.org/)
+
 A deterministic, auditable TypeScript library for converting energy to CO₂e emissions using region/methodology-specific grid emission factors.
+
+## 🌍 Repository
+
+- **GitHub**: [https://github.com/ShantanuVr/carbon-conversion-lib](https://github.com/ShantanuVr/carbon-conversion-lib)
+- **NPM**: [https://www.npmjs.com/package/carbon-conversion-lib](https://www.npmjs.com/package/carbon-conversion-lib)
 
 ## Features
 
@@ -17,13 +26,13 @@ A deterministic, auditable TypeScript library for converting energy to CO₂e em
 ## Installation
 
 ```bash
-npm install @carbon/convert
+npm install carbon-conversion-lib
 ```
 
 ## Quick Start
 
 ```typescript
-import { avoidedEmissions, resolveFactor } from '@carbon/convert';
+import { avoidedEmissions, resolveFactor } from 'carbon-conversion-lib';
 
 // 1. Resolve emission factor for India baseline
 const factor = resolveFactor({ region: 'IN', scope: 'baseline' });
@@ -47,7 +56,7 @@ console.log(`Avoided emissions: ${result.tCO2e} tCO₂e`);
 Convert energy to CO₂e emissions in kilograms.
 
 ```typescript
-import { toCO2eKg } from '@carbon/convert';
+import { toCO2eKg } from 'carbon-conversion-lib';
 
 const kgCO2e = toCO2eKg(1000, 'kWh', 0.5);
 // Returns: 500
@@ -57,7 +66,7 @@ const kgCO2e = toCO2eKg(1000, 'kWh', 0.5);
 Convert energy to CO₂e emissions in tonnes.
 
 ```typescript
-import { toCO2eTonnes } from '@carbon/convert';
+import { toCO2eTonnes } from 'carbon-conversion-lib';
 
 const tCO2e = toCO2eTonnes(1000, 'kWh', 0.5);
 // Returns: 0.5
@@ -69,7 +78,7 @@ const tCO2e = toCO2eTonnes(1000, 'kWh', 0.5);
 Calculate avoided emissions vs grid baseline.
 
 ```typescript
-import { avoidedEmissions } from '@carbon/convert';
+import { avoidedEmissions } from 'carbon-conversion-lib';
 
 const result = avoidedEmissions({
   energy: 1000,
@@ -98,7 +107,7 @@ console.log(result);
 Resolve emission factor by region, date, and scope.
 
 ```typescript
-import { resolveFactor } from '@carbon/convert';
+import { resolveFactor } from 'carbon-conversion-lib';
 
 // Get India baseline factor
 const factor = resolveFactor({ 
@@ -120,7 +129,7 @@ console.log(factor.valueKgPerKWh); // 0.708
 List all available factors with optional filtering.
 
 ```typescript
-import { listFactors } from '@carbon/convert';
+import { listFactors } from 'carbon-conversion-lib';
 
 // Get all factors
 const allFactors = listFactors();
@@ -147,7 +156,7 @@ import {
   MWhToKWh, 
   GWhToKWh,
   normalizeToKWh 
-} from '@carbon/convert';
+} from 'carbon-conversion-lib';
 
 // Convert between energy units
 const mwh = kWhToMWh(1000); // 1
@@ -164,7 +173,7 @@ import {
   kgToTonnes, 
   tonnesToKg,
   normalizeToTonnesCO2e 
-} from '@carbon/convert';
+} from 'carbon-conversion-lib';
 
 // Convert between mass units
 const tonnes = kgToTonnes(1000); // 1
@@ -178,7 +187,7 @@ const tonnes = normalizeToTonnesCO2e(1000, 'kgCO2e'); // 1
 
 #### Deterministic Rounding
 ```typescript
-import { roundStable } from '@carbon/convert';
+import { roundStable } from 'carbon-conversion-lib';
 
 // Round with different modes
 const rounded = roundStable(1.5, 0, 'HALF_UP'); // 2
@@ -191,7 +200,7 @@ const rounded = roundStable(1.234567, 2, 'HALF_UP'); // 1.23
 
 #### Safe Math Operations
 ```typescript
-import { safeAdd, safeMultiply, safeSum } from '@carbon/convert';
+import { safeAdd, safeMultiply, safeSum } from 'carbon-conversion-lib';
 
 // Safe operations to minimize floating point errors
 const sum = safeAdd(0.1, 0.2);           // 0.3
@@ -203,7 +212,7 @@ const total = safeSum([0.1, 0.2, 0.3]); // 0.6
 
 #### Stable Stringify
 ```typescript
-import { stableStringify, createDigest } from '@carbon/convert';
+import { stableStringify, createDigest } from 'carbon-conversion-lib';
 
 // Create deterministic JSON string
 const obj = { c: 3, a: 1, b: 2 };
@@ -225,7 +234,7 @@ const digest = createDigest(payload);
 ### Example 1: Basic Avoided Emissions Calculation
 
 ```typescript
-import { avoidedEmissions, resolveFactor } from '@carbon/convert';
+import { avoidedEmissions, resolveFactor } from 'carbon-conversion-lib';
 
 // Calculate avoided emissions for a solar project in India
 const factor = resolveFactor({ region: 'IN', scope: 'baseline' });
@@ -242,7 +251,7 @@ console.log(`Avoided emissions: ${result.tCO2e} tCO₂e`);
 ### Example 2: MWh Input with Custom Rounding
 
 ```typescript
-import { avoidedEmissions, resolveFactor } from '@carbon/convert';
+import { avoidedEmissions, resolveFactor } from 'carbon-conversion-lib';
 
 // Calculate with MWh input and custom rounding
 const factor = resolveFactor({ region: 'US', scope: 'baseline' });
@@ -263,7 +272,7 @@ console.log(`Avoided emissions: ${result.tCO2e} tCO₂e`);
 ### Example 3: Deterministic Digest Creation
 
 ```typescript
-import { stableStringify } from '@carbon/convert';
+import { stableStringify } from 'carbon-conversion-lib';
 
 // Create deterministic digest for hashing
 const digest = {
@@ -280,7 +289,7 @@ const payload = stableStringify(digest);
 ### Example 4: Batch Calculations
 
 ```typescript
-import { batchAvoidedEmissions, totalAvoidedEmissions } from '@carbon/convert';
+import { batchAvoidedEmissions, totalAvoidedEmissions } from 'carbon-conversion-lib';
 
 // Calculate avoided emissions for multiple sources
 const inputs = [
@@ -300,7 +309,7 @@ console.log(`Total avoided: ${totalResult.tCO2e} tCO₂e`);
 ### Example 5: Uncertainty Handling
 
 ```typescript
-import { avoidedEmissionsWithUncertainty } from '@carbon/convert';
+import { avoidedEmissionsWithUncertainty } from 'carbon-conversion-lib';
 
 // Calculate with uncertainty bounds
 const result = avoidedEmissionsWithUncertainty(
@@ -367,7 +376,7 @@ import {
   UnknownRegionError, 
   NoFactorForDateError, 
   InvalidUnitError 
-} from '@carbon/convert';
+} from 'carbon-conversion-lib';
 
 try {
   const factor = resolveFactor({ region: 'UNKNOWN', scope: 'baseline' });
@@ -403,7 +412,7 @@ console.log(result); // 8.736740
 The library is built with TypeScript and provides full type safety:
 
 ```typescript
-import { AvoidedInput, AvoidedResult, Factor } from '@carbon/convert';
+import { AvoidedInput, AvoidedResult, Factor } from 'carbon-conversion-lib';
 
 const input: AvoidedInput = {
   energy: 1000,
