@@ -1,0 +1,156 @@
+[
+  {
+    "id": "WORLD-DEFAULT-2024",
+    "region": "WORLD",
+    "scope": "baseline",
+    "gas": "CO2e",
+    "valueKgPerKWh": 0.82,
+    "effectiveFrom": "2024-01-01",
+    "source": {
+      "name": "Demo Default",
+      "note": "Coal-heavy illustrative baseline"
+    },
+    "version": "v1"
+  },
+  {
+    "id": "IN-2024-BASELINE",
+    "region": "IN",
+    "scope": "baseline",
+    "gas": "CO2e",
+    "valueKgPerKWh": 0.708,
+    "effectiveFrom": "2024-01-01",
+    "source": {
+      "name": "Illustrative India factor (demo)",
+      "note": "Replace with official source in production"
+    },
+    "version": "v1"
+  },
+  {
+    "id": "US-2024-BASELINE",
+    "region": "US",
+    "scope": "baseline",
+    "gas": "CO2e",
+    "valueKgPerKWh": 0.386,
+    "effectiveFrom": "2024-01-01",
+    "source": {
+      "name": "Illustrative US avg (demo)"
+    },
+    "version": "v1"
+  },
+  {
+    "id": "EU-2024-BASELINE",
+    "region": "EU",
+    "scope": "baseline",
+    "gas": "CO2e",
+    "valueKgPerKWh": 0.255,
+    "effectiveFrom": "2024-01-01",
+    "source": {
+      "name": "Illustrative EU avg (demo)"
+    },
+    "version": "v1"
+  },
+  {
+    "id": "CN-2024-BASELINE",
+    "region": "CN",
+    "scope": "baseline",
+    "gas": "CO2e",
+    "valueKgPerKWh": 0.581,
+    "effectiveFrom": "2024-01-01",
+    "source": {
+      "name": "Illustrative China avg (demo)"
+    },
+    "version": "v1"
+  },
+  {
+    "id": "BR-2024-BASELINE",
+    "region": "BR",
+    "scope": "baseline",
+    "gas": "CO2e",
+    "valueKgPerKWh": 0.089,
+    "effectiveFrom": "2024-01-01",
+    "source": {
+      "name": "Illustrative Brazil avg (demo)"
+    },
+    "version": "v1"
+  },
+  {
+    "id": "IN-2024-OPERATIONAL",
+    "region": "IN",
+    "scope": "operational",
+    "gas": "CO2e",
+    "valueKgPerKWh": 0.708,
+    "effectiveFrom": "2024-01-01",
+    "uncertaintyPct": 5.0,
+    "source": {
+      "name": "Illustrative India operational (demo)",
+      "note": "Replace with official source in production"
+    },
+    "version": "v1"
+  },
+  {
+    "id": "US-2024-OPERATIONAL",
+    "region": "US",
+    "scope": "operational",
+    "gas": "CO2e",
+    "valueKgPerKWh": 0.386,
+    "effectiveFrom": "2024-01-01",
+    "uncertaintyPct": 3.0,
+    "source": {
+      "name": "Illustrative US operational (demo)"
+    },
+    "version": "v1"
+  },
+  {
+    "id": "EU-2024-OPERATIONAL",
+    "region": "EU",
+    "scope": "operational",
+    "gas": "CO2e",
+    "valueKgPerKWh": 0.255,
+    "effectiveFrom": "2024-01-01",
+    "uncertaintyPct": 2.0,
+    "source": {
+      "name": "Illustrative EU operational (demo)"
+    },
+    "version": "v1"
+  },
+  {
+    "id": "IN-2024-MARGINAL",
+    "region": "IN",
+    "scope": "marginal",
+    "gas": "CO2e",
+    "valueKgPerKWh": 0.820,
+    "effectiveFrom": "2024-01-01",
+    "uncertaintyPct": 10.0,
+    "source": {
+      "name": "Illustrative India marginal (demo)",
+      "note": "Replace with official source in production"
+    },
+    "version": "v1"
+  },
+  {
+    "id": "US-2024-MARGINAL",
+    "region": "US",
+    "scope": "marginal",
+    "gas": "CO2e",
+    "valueKgPerKWh": 0.450,
+    "effectiveFrom": "2024-01-01",
+    "uncertaintyPct": 8.0,
+    "source": {
+      "name": "Illustrative US marginal (demo)"
+    },
+    "version": "v1"
+  },
+  {
+    "id": "EU-2024-MARGINAL",
+    "region": "EU",
+    "scope": "marginal",
+    "gas": "CO2e",
+    "valueKgPerKWh": 0.320,
+    "effectiveFrom": "2024-01-01",
+    "uncertaintyPct": 7.0,
+    "source": {
+      "name": "Illustrative EU marginal (demo)"
+    },
+    "version": "v1"
+  }
+]

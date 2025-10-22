@@ -1,0 +1,142 @@
+[
+  {
+    "code": "WORLD",
+    "name": "World",
+    "iso2": null,
+    "iso3": null,
+    "unM49": "001"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "iso2": "IN",
+    "iso3": "IND",
+    "unM49": "356"
+  },
+  {
+    "code": "US",
+    "name": "United States",
+    "iso2": "US",
+    "iso3": "USA",
+    "unM49": "840"
+  },
+  {
+    "code": "EU",
+    "name": "European Union",
+    "iso2": null,
+    "iso3": null,
+    "unM49": null
+  },
+  {
+    "code": "CN",
+    "name": "China",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "unM49": "156"
+  },
+  {
+    "code": "BR",
+    "name": "Brazil",
+    "iso2": "BR",
+    "iso3": "BRA",
+    "unM49": "076"
+  },
+  {
+    "code": "DE",
+    "name": "Germany",
+    "iso2": "DE",
+    "iso3": "DEU",
+    "unM49": "276"
+  },
+  {
+    "code": "FR",
+    "name": "France",
+    "iso2": "FR",
+    "iso3": "FRA",
+    "unM49": "250"
+  },
+  {
+    "code": "GB",
+    "name": "United Kingdom",
+    "iso2": "GB",
+    "iso3": "GBR",
+    "unM49": "826"
+  },
+  {
+    "code": "JP",
+    "name": "Japan",
+    "iso2": "JP",
+    "iso3": "JPN",
+    "unM49": "392"
+  },
+  {
+    "code": "CA",
+    "name": "Canada",
+    "iso2": "CA",
+    "iso3": "CAN",
+    "unM49": "124"
+  },
+  {
+    "code": "AU",
+    "name": "Australia",
+    "iso2": "AU",
+    "iso3": "AUS",
+    "unM49": "036"
+  },
+  {
+    "code": "RU",
+    "name": "Russia",
+    "iso2": "RU",
+    "iso3": "RUS",
+    "unM49": "643"
+  },
+  {
+    "code": "MX",
+    "name": "Mexico",
+    "iso2": "MX",
+    "iso3": "MEX",
+    "unM49": "484"
+  },
+  {
+    "code": "KR",
+    "name": "South Korea",
+    "iso2": "KR",
+    "iso3": "KOR",
+    "unM49": "410"
+  },
+  {
+    "code": "IT",
+    "name": "Italy",
+    "iso2": "IT",
+    "iso3": "ITA",
+    "unM49": "380"
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "iso2": "ES",
+    "iso3": "ESP",
+    "unM49": "724"
+  },
+  {
+    "code": "NL",
+    "name": "Netherlands",
+    "iso2": "NL",
+    "iso3": "NLD",
+    "unM49": "528"
+  },
+  {
+    "code": "SE",
+    "name": "Sweden",
+    "iso2": "SE",
+    "iso3": "SWE",
+    "unM49": "752"
+  },
+  {
+    "code": "NO",
+    "name": "Norway",
+    "iso2": "NO",
+    "iso3": "NOR",
+    "unM49": "578"
+  }
+]
